@@ -17,7 +17,7 @@ import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView ivDrawableCode,ivAssetsCode,ivRawCode;
+    private ImageView ivAssetsCode,ivRawCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         ivAssetsCode = findViewById(R.id.iv_assets);
         ivRawCode = findViewById(R.id.iv_raw);
 
-        ivDrawableCode.setImageResource(R.drawable.g3);
         loadImageFromAssets("g1.png",ivAssetsCode);
         loadImageFromRaw(R.raw.g2,ivRawCode);
 
