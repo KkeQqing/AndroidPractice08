@@ -1,0 +1,5 @@
+<!-- 个人中心图标的状态选择器 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/mine_select" android:state_checked="true" />
+    <item android:drawable="@drawable/mine_default" android:state_checked="false" />
+</selector>

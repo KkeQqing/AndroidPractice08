@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="#000000"
-    android:gravity="center">
+    android:gravity="bottom">
 
     <!-- 第一行 -->
     <LinearLayout
@@ -155,5 +155,57 @@
                 android:maxWidth="160dp"/>
         </LinearLayout>
     </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/tab_background"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <RadioButton
+            style="@style/CustomTabRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_btn"
+            android:tag="home"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/tab_background"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <RadioButton
+            style="@style/CustomTabRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:tag="home"
+            android:text="首页" />
+
+        <RadioButton
+            style="@style/CustomTabRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_tab_person_normal"
+            android:tag="discover"
+            android:text="发现" />
+
+        <RadioButton
+            style="@style/CustomTabRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_person"
+            android:tag="profile"
+            android:text="我的" />
+
+    </RadioGroup>
 
 </LinearLayout>
